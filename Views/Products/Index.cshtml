@@ -1,0 +1,19 @@
+@model MyWork.Models.Products.IndexViewModel
+
+<form asp-action="Info" asp-controller="Products" method="post">
+
+    <h2>First name:</h2>
+    <input asp-for="FirstName">
+    @Html.ValidationMessageFor(model => model.FirstName)
+
+    <h2>Last name:</h2>
+    <input asp-for="LastName">
+    @Html.ValidationMessageFor(model => model.LastName)
+
+    <h2>Age:</h2>
+    <input asp-for="Age">
+    @Html.ValidationMessageFor(model => model.Age)
+
+    <input type="submit">
+
+</form>
