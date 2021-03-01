@@ -6,8 +6,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MVC;
+using MVC.Entities;
+using MVC.Models.Products;
 
-namespace MyWork
+namespace MVC
 {
     public class Program
     {

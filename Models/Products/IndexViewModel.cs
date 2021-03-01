@@ -1,10 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace MyWork.Models.Products
+namespace MVC.Models.Products
 {
     public class IndexViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Please Add Name")]
         public string FirstName { get; set; }
 
         [Required]
@@ -12,5 +12,8 @@ namespace MyWork.Models.Products
 
         [Range (0, 100)]
         public int Age { get; set; }
+
+        [Required]
+        public string Address { get; set; }
     }
 }

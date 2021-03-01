@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyWork\\MyWork.csproj": {}
+    "D:\\MVC\\MyWork.csproj": {}
   },
   "projects": {
-    "C:\\MyWork\\MyWork.csproj": {
+    "D:\\MVC\\MyWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyWork\\MyWork.csproj",
+        "projectUniqueName": "D:\\MVC\\MyWork.csproj",
         "projectName": "MyWork",
-        "projectPath": "C:\\MyWork\\MyWork.csproj",
-        "packagesPath": "C:\\Users\\Platform PC\\.nuget\\packages\\",
-        "outputPath": "C:\\MyWork\\obj\\",
+        "projectPath": "D:\\MVC\\MyWork.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Platform PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

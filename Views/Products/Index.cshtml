@@ -1,18 +1,23 @@
-@model MyWork.Models.Products.IndexViewModel
+@model MVC.Models.Products.IndexViewModel
 
 <form asp-action="Info" asp-controller="Products" method="post">
 
     <h2>First name:</h2>
     <input asp-for="FirstName">
-    @Html.ValidationMessageFor(model => model.FirstName)
+    <span  asp-validation-for="FirstName"></span>
+    <!--@Html.ValidationMessageFor(model => model.FirstName)-->
 
     <h2>Last name:</h2>
     <input asp-for="LastName">
-    @Html.ValidationMessageFor(model => model.LastName)
+    <span  asp-validation-for="LastName"></span>
 
     <h2>Age:</h2>
     <input asp-for="Age">
-    @Html.ValidationMessageFor(model => model.Age)
+    <span  asp-validation-for="Age"></span>
+
+    <h2>Address:</h2>
+    <textarea  asp-for="Address" >Enter text here...</textarea>
+    <span  asp-validation-for="Address"></span>
 
     <input type="submit">
 
